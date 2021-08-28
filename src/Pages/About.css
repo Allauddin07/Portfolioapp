@@ -1,0 +1,43 @@
+.im {
+    /* border-radius: 50%; */
+    margin-top: 75px;
+    width: 134px;
+    height: 132px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    border: none;
+    border-bottom: 1px solid black;
+    /* background: transparent; */
+    outline: none;
+    height: 27px;
+    color: black;
+    font-size: 16px;
+    width: 97px;
+    padding: 0;
+    transform: translate(0px, -12px);
+}
+
+input[type="email"] {
+    width: 97%;
+}
+
+input[type="number"] {
+    width: 157px;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+a {
+    transform: translate(36px, -54px);
+}
+
+@media only screen and(max_width:500) {
+    input[type="email"] {
+        width: 116%;
+    }
+}

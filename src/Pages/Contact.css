@@ -1,0 +1,43 @@
+.frm div{
+    
+padding: .5rem;
+font-size: 1.5rem;
+font-weight: 400;
+  
+}
+.bt{
+    text-align: center;
+}
+.box{
+    box-shadow: 5px 5px 8px #b8b5b5;
+}
+
+.frm div input, textarea{
+    
+    margin-top: .5rem;
+    line-height: 1.5rem;
+    font-size: 2.0rem;
+    
+    
+}
+
+textarea{
+    font-size: 2rem !important;
+}
+
+.flx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cnt{
+    text-align: center;
+}
+
+.ph{
+    grid-column: 1 / span 3;
+}
+
+/* .form-group{
+    grid-row: 1 / span 1;
+} */

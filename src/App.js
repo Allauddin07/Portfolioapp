@@ -4,12 +4,14 @@ import Contact from './Pages/Contact'
 import Home from './Pages/Home'
 import Project from './Pages/Project'
 import Navbar from './component/Navbar'
+import ScrollToTop from './component/ScrollToTop'
 
 
 function App() {
   return (
     <div className="App">
      <Router>
+       <ScrollToTop/>
        <Navbar/>
        <Switch>
          <Route exact path="/" component={Home} />

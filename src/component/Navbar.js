@@ -16,18 +16,17 @@ export default function Navbar() {
         <>
 
 
-            <nav class=" navbar navbar-expand-lg navbar-mainbg"> 
+            <nav class=" navbar bg-dark navbar-expand-lg navbar-mainbg"> 
             
 
                 
-                <NavLink exact to='/' className="navbar-brand navbar-logo">Allauddin</NavLink>
+                <NavLink exact to='/' className="navbar-brand log navbar-logo">Allauddin</NavLink>
 
 
 
                 <div
                     className="BurgerMenu__container navbar-toggler "
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                     role="button"
                     onClick={() => setStatus(status === 'open' ? 'close' : 'open')}
                 >
@@ -37,29 +36,34 @@ export default function Navbar() {
                 </div>
 
                 <div
-                    class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
+                    className={status==='open' ? '"collapse navbar-collapse"':"collapse navbar-collapse" }
+                      id="navbarSupportedContent">
+                    <ul className='navbar-nav ml-auto' >
 
 
 
-                        <li class="nav-item ">
+                        <li className="nav-item"
+                          data-toggle="collapse"
+                        
+                         onClick={() => setStatus('close')}>
 
 
                             <NavLink exact to='/' className="nav-link">Home</NavLink>
 
                         </li>
 
-                        <li class="nav-item">
+                        <li className="nav-item"  onClick={() => setStatus('close')}>
 
 
                             <NavLink exact to="/about" className="nav-link">About</NavLink>
 
 
                         </li>
-                        <li class="nav-item">
-                            <NavLink exact to="/project" className="link">Project</NavLink>
-                        </li>
-                        <li class="nav-item">
+                        {/* <li class="nav-item">
+                            <NavLink exact to="/project" className="nav-link">Project</NavLink>
+                        </li> */}
+                        <li class="nav-item" 
+                        onClick={() => setStatus('close')}  >
 
 
                             <NavLink exact to="/contact" className="nav-link" >Contact</NavLink>

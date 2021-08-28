@@ -1,6 +1,8 @@
 import React from 'react'
-import img from '../images/img1.jpg'
+
 import Typed from 'react-typed'
+import { NavLink } from 'react-router-dom'
+import Carousal from '../component/Carousal'
 
 export default function Home() {
     return (
@@ -11,29 +13,42 @@ export default function Home() {
                     <div className="row align-items-center">
 
                         <div className="col-md-6">
-                            <h1 className="mb-4 font-weight-bold">I build
-                                <span className="text-info pl-2">website</span><br/>that build your business
-          </h1>
-                                <p className="mb-4 pb-2 ">
+                            <div className="animate__animated animate__backInLeft">
+
+                                <h1 className="mb-4 font-weight-bold">I build
+                                    <span className="text-info pl-2">website</span><br />that build your business
+                                </h1>
+                            </div>
+                            <p className="mb-4 pb-2 ">
+                               Using
+                               
                                 <Typed
-                                    strings={["JavaScript", "React", "Redux", "Node.js", "Express.js"]}
+                                    strings={["JavaScript", " React","Bootstrap","SCSS", "  Redux", "Node.js", "Express.js"]}
                                     typeSpeed={30}
                                     backSpeed={60}
-                                    loop /> 
-                                </p>
-                                
-                                <div>
-                                    <a href="#contact" className="text-center btn btn-outline-dark btn-lg btn-block">Contact Us</a>
-                                </div>
-        </div>
+                                    loop />
+                            </p>
 
-                            <div className="col-md-6 im col-12  d-md-block">
-                                <img src={img} alt="tours pics" className="img-fluid" />
+                            <div className="mt-3">
+
+                                <NavLink exact to='/contact' className="text-center btn   btn-block animate__animated animate__lightSpeedInRight ">Contact Me</NavLink>
+
                             </div>
-
                         </div>
+
+                        <div className="col-md-6 im col-12  d-md-block">
+                            {/* <img src={img} alt="tours pics" className="img-fluid" /> */}
+                            <Carousal/>
+                        </div>
+
                     </div>
-  </header>
+                </div>
+            </header>
+
+        
+
+
+          
         </>
-            )
+    )
 }

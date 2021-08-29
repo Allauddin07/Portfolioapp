@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import img from '../images/img5.jpg'
+import img from '../images/alauddin.jpeg'
 // import "./About.css"
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
                                         <h3 className="font-weight-bold mt-2"> 0225165668</h3>
 
                                         <h3 className="font-weight-bold mt-2">allauddinansari717@gmail.com</h3>
-                                        
+
 
 
                                     </div>
@@ -34,20 +34,20 @@ export default function Home() {
 
                                 <div className="col-sm-8  imge d-flex align-items-center bg-white rounded-right">
 
-                                     <div  className="ml-2 ">
-                                     <p className="contact">ABOUT ME</p>
-                                   <p>Hello! I am Allauddin. 
-                                    I have recently finished my graduation with bachler degree in computer science. 
-                                    I am full stack webdeveloper. Technology I use is MERN(MongoDB, Express, ReactJS, and NodeJS).
-                                    I create responsive website that are displayed on all devices desktop and smartphones.
-                                    Of course, before developing any webapp, Landing Page, Business Website, I need to have a ready-made project
-                                    layout(sketch). and I am ready to do this for you, 
+                                    <div className="ml-2 ">
+                                        <p className="contact">ABOUT ME</p>
+                                        <p>Hello! I am Allauddin.
+                                            I have recently finished my graduation with bachler degree in computer science.
+                                            I am full stack webdeveloper. Technology I use is MERN(MongoDB, Express, ReactJS, and NodeJS).
+                                            I create responsive website that are displayed on all devices desktop and smartphones.
+                                            Of course, before developing any webapp, Landing Page, Business Website, I need to have a ready-made project
+                                            layout(sketch). and I am ready to do this for you,
 
-                                   </p>
-                                    
+                                        </p>
 
-                                     </div>
-                                  
+
+                                    </div>
+
 
 
 
@@ -66,6 +66,14 @@ export default function Home() {
                 </div>
 
 
+
+
+                <div class="footer">
+
+                    <div className="footer-copyright text-center  p">© 2021 Copyright:
+                        <a href="https://www.linkedin.com/in/allauddin-allauddin-14452920b/"> LinkedIn</a>
+                    </div>
+                </div>
 
             </header>
 

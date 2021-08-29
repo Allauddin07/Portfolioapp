@@ -101,6 +101,17 @@ export default function Contact() {
 
                     </div>
                 </div>
+
+
+
+
+
+                <div class="footer">
+  
+  <div className="footer-copyright text-center  p">© 2021 Copyright:
+      <a href="https://www.linkedin.com/in/allauddin-allauddin-14452920b/"> LinkedIn</a>
+    </div>
+</div>
             </header>
         </div>
     )

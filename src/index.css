@@ -533,6 +533,21 @@ button{
   width: 50%;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(31, 29, 29);
+  color: white;
+  text-align: center;
+}
+.p {
+  padding-top: 3rem!important;
+  padding-bottom: 3rem!important;
+  font-size: 2.3rem !important;
+}
+
 @media (max-width: 1024px) {
 
   html{
@@ -607,5 +622,9 @@ font-size: 2.6rem;
   }
   p {
     font-size: 2.4rem;}
+
+    .mg{
+      margin-bottom: 1.2rem !important;
+    }
   
 }

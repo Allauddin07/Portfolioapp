@@ -36,7 +36,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="col-md-6 im col-12  d-md-block">
+                        <div className="col-md-6 mt-3">
                             {/* <img src={img} alt="tours pics" className="img-fluid" /> */}
                             <Carousal/>
                         </div>
